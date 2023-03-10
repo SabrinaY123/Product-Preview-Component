@@ -1,0 +1,176 @@
+/*****************************TAG ELEMENTS*************************/
+body {
+    margin: 12vh 0 5vh;
+    background-color:hsl(30, 38%, 92%);
+    text-align: center;
+}
+
+h1 {
+    font-size: 2 rem;
+    color: hsl(212, 21%, 14%);
+}
+
+h2 {
+    font-size: 1rem;
+}
+
+h4 {
+    text-align: center;
+    margin: 0;
+}
+
+p {
+    font-size: 14px;
+}
+
+/*****************************ID ELEMENTS***********************/
+
+#home-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/*****************************CLASS ELEMENTS***********************/
+
+.main-container {
+    background-color: white;
+    display: flex;
+    border-radius: 2%;
+    flex-wrap: nowrap;
+    max-width: 640px;
+    height: 484px;
+}
+
+
+/* Product Description */
+
+.price-box {
+    display: flex;
+    align-items:center;
+    gap: 1em;
+}
+
+.product-description {
+  text-align: left;
+  display: flex;
+  flex: 50%;
+  flex-wrap: wrap;
+  margin: 20px 40px;
+}
+
+.original-price {
+    text-align: center;
+    text-decoration: line-through;
+}
+
+.product-description> p, .original-price {
+    font-family: 'Montserrat', sans-serif;
+    color:  hsl(228, 12%, 48%);
+}
+
+
+.product-description> h1, .price-box {
+    font-family: 'Fraunces', serif;
+}
+
+.perfume-title {
+    letter-spacing: 5px;
+}
+
+.discounted-price h1 {
+    color: #3D8168;
+}
+
+.scent-description {
+    line-height: 1.5;
+}
+
+/* Button */
+
+.btn {
+    -webkit-border-radius: 10;
+    -moz-border-radius: 10;
+    border-radius: 10px;
+    font-family: 'Montserrat', sans-serif;
+    color: #ffffff;
+    font-size: 14px;
+    font-weight:600;
+    background: #3D8168;
+    padding: 12px 60px 12px 55px;
+    text-decoration: none;
+  }
+  
+  .btn:hover {
+    background: #235240;
+    text-decoration: none;
+  }
+
+.bi {
+    padding-right: 10px;
+}
+
+/* Product Image */
+
+.product-img {
+    flex:50%;
+}
+
+.product-img-tag {
+    width: 320px;
+    height: 484px;
+    border-radius: 2% 0 0 2%;
+}
+
+
+/* Footer */
+.attribution {
+    margin: 100px auto 0;
+    font-family: 'Montserrat', sans-serif;
+    color:  hsl(228, 12%, 48%);
+}
+
+.attribution a {
+    color: #3D8168;
+}
+
+
+/* Media Queries */
+@media (max-width:660px) {
+    body {
+        margin: 3%;
+    }
+
+    .main-container {
+        flex-direction: column; 
+        height: 650px; 
+        width: 330px;
+    }
+
+    .product-description {
+        min-height: 350px;
+        margin: 10px 20px 15px;
+        flex-wrap: wrap;
+    }
+
+    .product-description h1 { 
+        margin:5px 0;
+    }
+
+    .btn {
+        margin-top: 15px;
+        padding: 12px 91px 12px 88px;
+    }
+
+    .product-img-tag {
+        height: inherit;
+        width: 330px;
+        object-fit: cover;
+        border-radius: 2% 2% 0 0;
+    }
+
+    .product-img {
+        flex: 100%;
+        height: 270px;
+    }
+}
